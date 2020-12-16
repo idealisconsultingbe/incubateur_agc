@@ -1,0 +1,20 @@
+<odoo>
+
+    <record id="account.account_move_comp_rule" model="ir.rule">
+        <field name="perm_read" eval="False"/>
+    </record>
+
+    <record id="account.account_move_line_comp_rule" model="ir.rule">
+        <field name="perm_read" eval="False"/>
+    </record>
+
+    <record id="account.tax_comp_rule" model="ir.rule">
+        <field name="perm_read" eval="False"/>
+    </record>
+
+    <!--  I don't know why, but this solves an access issue when reading confirmed SO  -->
+    <record id="sale.sale_order_line_personal_rule" model="ir.rule">
+        <field name="perm_read" eval="False"/>
+    </record>
+
+</odoo>
